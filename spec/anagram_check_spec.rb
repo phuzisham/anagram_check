@@ -13,7 +13,7 @@ describe('#anagram_check') do
   end
 
   it('will check if two words are not anagrams') do
-    expect(Anagram.new('mango').anagram_check('melon')).to(eq('These words are not anagrams!'))
+    expect(Anagram.new('mango').anagram_check('melon')).to(eq('These words are not anagrams and have 3 letters in common!'))
   end
 
   it('will check ignoring case') do

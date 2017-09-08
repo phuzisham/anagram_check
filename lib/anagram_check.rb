@@ -9,6 +9,7 @@ class Anagram
     str2_sort = str2.gsub(/[^a-z]/i, '').downcase.split('').sort.join('')
     str1_rev = str1.gsub(/[^a-z]/i, '').downcase.reverse
     str2_rev_check = str2.gsub(/[^a-z]/i, '').downcase
+    str_count = str1_sort.scan(/[#{str2_sort}]/).count
 
     if (str1.scan(/[aeiouAEIOU]/).count >= 1 && str2.scan(/[aeiouAEIOU]/).count >= 1)
       if (str1_sort === str2_sort && str1_rev === str2_rev_check)
@@ -16,8 +17,8 @@ class Anagram
       elsif (str1_sort === str2_sort)
         'These words are anagrams!'
       else
-        if (str1_sort.scan(/[#{str2_sort}]/).count >= 1)
-          'These words are not anagrams!'
+        if (str_count >= 1)
+          'These words are not anagrams and have ' + str_count.to_s + ' letters in common!'
         else
           'These words are antigrams!'
         end
