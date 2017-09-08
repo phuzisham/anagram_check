@@ -1,8 +1,8 @@
 class Anagram
   def anagram_check(str1, str2)
-    str1_sort = str1.downcase.split('').sort
-    str2_sort = str2.downcase.split('').sort
-    str1_rev = str1.reverse.downcase
+    str1_sort = str1.downcase.split('').sort.join('')
+    str2_sort = str2.downcase.split('').sort.join('')
+    str1_rev = str1.downcase.reverse
 
     if (str1.scan(/[aeiouAEIOU]/).count >= 1 && str2.scan(/[aeiouAEIOU]/).count >= 1)
       if (str1_sort === str2_sort && str1_rev === str2)

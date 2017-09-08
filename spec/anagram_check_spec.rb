@@ -13,6 +13,10 @@ describe('#anagram_check') do
     expect(example.anagram_check('ruby', 'bury')).to(eq('These words are anagrams!'))
   end
 
+  it('will check if two words are not anagrams') do
+    expect(example.anagram_check('mango', 'melon')).to(eq('These words are not anagrams!'))
+  end
+
   it('will check ignoring case') do
     expect(example.anagram_check('ruBy', 'burY')).to(eq('These words are anagrams!'))
   end
@@ -20,5 +24,9 @@ describe('#anagram_check') do
   it('will check if words are also palindromes') do
     expect(example.anagram_check('Racecar', 'racecar')).to(eq('These words are anagrams and palindromes!'))
   end
+
+  # it('will check if words are antigrams') do
+  #   expect(example.anagram_check('Kite', 'Cark')).to(eq('These words are antigrams!'))
+  # end
 
 end
