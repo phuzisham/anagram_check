@@ -22,6 +22,8 @@ _Script takes two strings and runs a series of comparisons on them._
 | It will remove special characters and run checks. | 'Race Car', 'racecar!!!##@@' | 'These words are anagrams and palindromes!' |
 | Script offers option to check another string against original. | Would you like to check another word against 'original string'? Response: Yes | 'Type another word:' |
 
+| Script offers option to check another string against original. | Would you like to check another word against 'original string'? Response: Yes | 'Type another word:' |
+
 ## Setup/Installation Requirements
 
 1. _Download files [here](https://github.com/phuzisham/anagram_check.git)._
