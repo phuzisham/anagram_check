@@ -4,12 +4,16 @@ class Anagram
     str2_sort = str2.downcase.split('').sort
     str1_rev = str1.reverse.downcase
 
-    if (str1_sort === str2_sort && str1_rev === str2)
-      'These words are anagrams and palindromes!'
-    elsif (str1_sort === str2_sort)
-      'These words are anagrams!'
+    if (str1.scan(/[aeiouAEIOU]/).count >= 1 && str2.scan(/[aeiouAEIOU]/).count >= 1)
+      if (str1_sort === str2_sort && str1_rev === str2)
+        'These words are anagrams and palindromes!'
+      elsif (str1_sort === str2_sort)
+        'These words are anagrams!'
+      else
+        'These words are not anagrams!'
+      end
     else
-      'These words are not anagrams!'
+      'You need to input actual words!'
     end
   end
 end

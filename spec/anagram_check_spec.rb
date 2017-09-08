@@ -5,6 +5,10 @@ require('anagram_check')
 describe('#anagram_check') do
   example = Anagram.new()
 
+  it('will check if two words are words') do
+    expect(example.anagram_check('rby', 'bury')).to(eq('You need to input actual words!'))
+  end
+
   it('will check if two words are anagrams') do
     expect(example.anagram_check('ruby', 'bury')).to(eq('These words are anagrams!'))
   end
