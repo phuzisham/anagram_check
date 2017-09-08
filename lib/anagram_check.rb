@@ -1,5 +1,12 @@
 class Anagram
-  def anagram_check(str1, str2)
+  def initialize(str1, str2)
+    @str1 = str1
+    @str2 = str2
+  end
+
+  def anagram_check()
+    str1 = @str1
+    str2 = @str2
     str1_sort = str1.gsub(/[^a-z]/i, '').downcase.split('').sort.join('')
     str2_sort = str2.gsub(/[^a-z]/i, '').downcase.split('').sort.join('')
     str1_rev = str1.gsub(/[^a-z]/i, '').downcase.reverse
