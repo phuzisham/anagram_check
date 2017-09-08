@@ -39,6 +39,6 @@ _Ruby 2.2.2 and the gems 'rspec' and 'pry'._
 
 ### License
 
-*MIT Licenseß*
+*MIT License*
 
 Copyright (c) 2017 **_David Hale_**
