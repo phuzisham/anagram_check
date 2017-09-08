@@ -29,4 +29,12 @@ describe('#anagram_check') do
     expect(example.anagram_check('Kite', 'Car')).to(eq('These words are antigrams!'))
   end
 
+  it('will remove spaces and check') do
+    expect(example.anagram_check('Race Car', 'racecar')).to(eq('These words are anagrams and palindromes!'))
+  end
+
+  it('will remove spaces, special characters and check') do
+    expect(example.anagram_check('Race Car', 'racecar!!!##@@')).to(eq('These words are anagrams and palindromes!'))
+  end
+
 end
