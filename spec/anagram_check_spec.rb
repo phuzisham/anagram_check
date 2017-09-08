@@ -25,8 +25,8 @@ describe('#anagram_check') do
     expect(example.anagram_check('Racecar', 'racecar')).to(eq('These words are anagrams and palindromes!'))
   end
 
-  # it('will check if words are antigrams') do
-  #   expect(example.anagram_check('Kite', 'Cark')).to(eq('These words are antigrams!'))
-  # end
+  it('will check if words are antigrams') do
+    expect(example.anagram_check('Kite', 'Car')).to(eq('These words are antigrams!'))
+  end
 
 end
