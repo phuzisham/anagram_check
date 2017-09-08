@@ -39,7 +39,7 @@ describe('#anagram_check') do
     expect(example.anagram_check()).to(eq('These words are anagrams and palindromes!'))
   end
 
-  it('will remove spaces, special characters and check') do
+  it('will remove special characters and check') do
     example = Anagram.new('Race Car', 'racecar!!!##@@')
     expect(example.anagram_check()).to(eq('These words are anagrams and palindromes!'))
   end
