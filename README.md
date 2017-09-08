@@ -14,7 +14,7 @@ _Script takes two strings and runs a series of comparisons on them._
 | ------------- |:-------------:| -----:|
 | It will check if strings are actual words. | 'rby', 'bury' | 'You need to input actual words!' |
 | It will check if strings are anagrams. | 'ruby', 'bury' | 'These words are anagrams!' |
-| It will check if strings are not anagrams. |  'mango', 'melon'  | 'These words are not anagrams!' |
+| It will check if strings are not anagrams and if not display number of letters in common. |  'mango', 'melon'  | 'These words are not anagrams and have 3 letters in common!' |
 | It will run checks ignoring case. | 'ruBy', 'buRy' | 'These words are anagrams!' |
 | It will check if anagrams are also palindromes. | 'Racecar', 'racecar' | 'These words are anagrams and palindromes!' |
 | It will check if strings are anti-grams. | 'Kite', 'Car' | 'These words are antigrams!' |

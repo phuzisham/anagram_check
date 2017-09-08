@@ -12,7 +12,7 @@ describe('#anagram_check') do
     expect(Anagram.new('ruby').anagram_check('bury')).to(eq('These words are anagrams!'))
   end
 
-  it('will check if two words are not anagrams') do
+  it('will check if two words are not anagrams and if not display number of common letters') do
     expect(Anagram.new('mango').anagram_check('melon')).to(eq('These words are not anagrams and have 3 letters in common!'))
   end
 
