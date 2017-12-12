@@ -1,6 +1,7 @@
 # _Anagram Checker_
 
-#### _A Ruby script that can check if 2 strings are anagrams. Last Modified: 09.08.2017_
+#### _Created: 09.08.2017_
+#### _Last Modified: 12.11.2017_
 
 #### By _David Hale_
 
